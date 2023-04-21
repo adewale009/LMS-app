@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<link rel="stylesheet" type="text/css" href="kickstart.css" media="all" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />                 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="kickstart.js"></script> 
+
+    <title>Elearn</title>
+    
+<!-- <style>
+    .col_9{
+        background-color: darkred;
+    }
+</style> -->
+
+</head>
+
+<body>
+    
+    
+    <!-- Header -->
+    <%- include('./partials/_header.ejs')%>
+
+     <ul class="menu">
+        <li class="current"><a href="/">Home</a></li>
+        <li><a href="/classes">Classes</a></li>
+        </ul>
+        
+        <div class="grid">
+        <div class="col_12">
+            <div class="col_9">
+            <h3>Welcome To Elearn</h3>
+            <p>
+            Elearn is a simple and free online learning platform. Instructors can create course and 
+             students can register for courses which include assignments, quises and support forums.
+            </p>
+            <a class="button" href="/users/signup">Sign up </a>
+            <p>You need to signup to register for free classes</p>
+        </div>
+            
+    <%- include('./login.ejs')%>
+            
+            </div>
+            
+            <hr />
+            
+    <%- include('./classes.ejs')%>
+                
+        </div>
+        
+        </div>
+        
+        <!-- footer -->
+    <%- include('./partials/_footer.ejs')%>
+
+</body>
+</html>
